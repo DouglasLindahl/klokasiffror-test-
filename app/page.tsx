@@ -683,6 +683,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="text-center text-gray-500 text-sm py-4">
+        &copy; Org.Nr: 559521-6481 - 2026 Kloka Siffror AB - Website by Invicom.
+      </div>
     </>
   );
 }
