@@ -31,7 +31,7 @@ const packages = [
       "0-2 anställda",
       "Företag som vill ha stabil grund",
     ],
-    color: "from-[#007533] to-[#27AE60]",
+    color: "from-[#2A9036] to-[#2EDB4A]",
   },
   {
     icon: Calculator,
@@ -43,7 +43,7 @@ const packages = [
       "1-10 anställda",
       "Ägare som vill förså läget löpande",
     ],
-    color: "from-[#007533] to-[#27AE60]",
+    color: "from-[#2A9036] to-[#2EDB4A]",
   },
   {
     icon: Calculator,
@@ -56,7 +56,7 @@ const packages = [
       "Region- och franchisebolag",
       "Fastighetsägande bolag",
     ],
-    color: "from-[#007533] to-[#27AE60]",
+    color: "from-[#2A9036] to-[#2EDB4A]",
   },
 ];
 
@@ -72,7 +72,7 @@ const services = [
       "Lönehantering",
       "Digital kvitto- och fakturahantering",
     ],
-    color: "from-[#007533] to-[#27AE60]",
+    color: "from-[#2A9036] to-[#2EDB4A]",
   },
   {
     icon: Headset,
@@ -84,7 +84,7 @@ const services = [
       "Inkomstdeklarationer",
       "Rådgivning inför nytt räkenskapsår ",
     ],
-    color: "from-[#007533] to-[#229954]",
+    color: "from-[#2A9036] to-[#2A9036]",
   },
   {
     icon: Briefcase,
@@ -96,7 +96,7 @@ const services = [
       "Likviditets- och resultatrapportering ",
       "Tillväxt- och investeringsplanering",
     ],
-    color: "from-[#007533] to-[#1E8449]",
+    color: "from-[#2A9036] to-[#043724]",
   },
   {
     icon: Users,
@@ -110,7 +110,7 @@ const services = [
       "Råd om marknadsföring och kundrelationer",
       "Löpande coachning och uppföljning",
     ],
-    color: "from-[#2ECC71] to-[#27AE60]",
+    color: "from-[#2EDB4A] to-[#2EDB4A]",
     extended: true,
   },
   {
@@ -126,7 +126,7 @@ const services = [
       "Webbuppdateringar och enklare e-handelsstöd",
       "Bokföringsunderlag och kvittohantering",
     ],
-    color: "from-[#27AE60] to-[#229954]",
+    color: "from-[#2EDB4A] to-[#2A9036]",
     process: [
       "Vi kartlägger vad du behöver hjälp med",
       "Du väljer mellan fast pris och löpande avtal",
@@ -145,7 +145,7 @@ const services = [
       "Årsbokslut och årsredovisning (K2/K3)",
       "Rapporter och presentationer till styrelsen",
     ],
-    color: "from-[#229954] to-[#1E8449]",
+    color: "from-[#2A9036] to-[#043724]",
   },
 ];
 
@@ -231,9 +231,9 @@ export default function Home() {
     <>
       <div
         className="bg-gradient-to-br 
-  from-[#007533] from-0% 
-  via-[#007533] via-30% 
-  to-[#2ECC71] to-100% text-white"
+  from-[#2A9036] from-0% 
+  via-[#2A9036] via-30% 
+  to-[#2EDB4A] to-100% text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="text-center">
@@ -375,7 +375,7 @@ export default function Home() {
                     <ul className="space-y-4">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#2ECC71] flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-6 h-6 text-[#2EDB4A] flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
@@ -421,7 +421,7 @@ export default function Home() {
                     <ul className="space-y-4">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#2ECC71] flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-6 h-6 text-[#2EDB4A] flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
@@ -434,7 +434,7 @@ export default function Home() {
         </div>
       </div>
       {/*In depth*/}
-      <div className="py-24 bg-gradient-to-br from-[#2ECC71] to-[#27AE60]">
+      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A]">
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-8 lg:mx-10">
           <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 sm:p-12 shadow-xl hover:bg-white/20 transition-all duration-500">
             {/* Header */}
@@ -467,7 +467,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Optional structured list to match the other card visually */}
+            {/* List */}
             <div className="max-w-3xl mx-auto">
               <h3 className="text-xl font-semibold text-white mb-4 text-center">
                 Detta ingår vanligtvis
@@ -482,7 +482,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/*---*/}
+          {/* CORE ASSIST */}
+
           <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 sm:p-12 shadow-xl hover:bg-white/20 transition-all duration-500">
             {/* Header */}
             <div className="text-center mb-10">
@@ -499,6 +500,7 @@ export default function Home() {
             </div>
 
             {/* Description */}
+
             <div className="max-w-3xl mx-auto text-center mb-12">
               <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
                 Core Assist är Kloka Siffrors administrativa stödfunktion och
@@ -511,9 +513,11 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Content Grid */}
+            {/* Grid */}
+
             <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
               {/* Column 1 */}
+
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">
                   Administrativt stöd
@@ -528,6 +532,7 @@ export default function Home() {
               </div>
 
               {/* Column 2 */}
+
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">
                   Sociala medier & enklare marknadsadministration
@@ -615,7 +620,7 @@ export default function Home() {
             {cities.map((location, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col lg:flex-row gap-6 bg-gradient-to-br from-gray-50 to-white border-2 border-[#007533]/20 rounded-xl p-6 hover:border-[#00db33] transition-colors duration-300"
+                className="flex flex-col lg:flex-row gap-6 bg-gradient-to-br from-gray-50 to-white border-2 border-[#2A9036]/20 rounded-xl p-6 hover:border-[#00db33] transition-colors duration-300"
                 initial={{ opacity: 0, y: 40, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -654,10 +659,10 @@ export default function Home() {
                     </ul>
 
                     <div className="flex items-center gap-2">
-                      <Mail className="w-4 h-4 text-[#007533]" />
+                      <Mail className="w-4 h-4 text-[#2A9036]" />
                       <a
                         href={`mailto:${location.email}`}
-                        className="text-sm hover:text-[#007533] transition-colors"
+                        className="text-sm hover:text-[#2A9036] transition-colors"
                       >
                         {location.email}
                       </a>
@@ -683,7 +688,7 @@ export default function Home() {
               Rollfördelning
             </h3>
 
-            <h4 className="mt-4 text-xl font-semibold text-[#007533]">
+            <h4 className="mt-4 text-xl font-semibold text-[#2A9036]">
               Tydlig ansvarsfördelning
             </h4>
 
@@ -712,7 +717,7 @@ export default function Home() {
               className="h-20 sm:h-24 lg:h-58 w-auto opacity-95"
             />
           </div>
-          <div className="bg-gradient-to-br from-[#007533] to-[#003824] rounded-2xl p-8 sm:p-12 text-white text-center">
+          <div className="bg-gradient-to-br from-[#2A9036] to-[#043724] rounded-2xl p-8 sm:p-12 text-white text-center">
             <h3 className="text-2xl sm:text-3xl mb-4">Kontakt</h3>
             <br />
             <div className="space-y-2 text-lg">
