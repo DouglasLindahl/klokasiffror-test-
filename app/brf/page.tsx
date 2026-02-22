@@ -27,7 +27,7 @@ export default function BRFPage() {
       </div>
 
       {/* What’s included */}
-      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A] text-white">
+      <div className="py-24 bg-white text-gray-700">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
             Vad ingår i BRF-paketet
@@ -44,9 +44,9 @@ export default function BRFPage() {
       </div>
 
       {/* Pricing Section */}
-      <div className="py-24 bg-white text-gray-700">
+      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A] text-white">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-gray-900 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-white text-center">
             Prisstruktur BRF
           </h2>
 
@@ -79,7 +79,7 @@ export default function BRFPage() {
       </div>
 
       {/* Structure-related Add-ons */}
-      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A] text-white">
+      <div className="py-24 bg-white text-gray-700">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
             Strukturrelaterade tillägg

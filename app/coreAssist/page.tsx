@@ -22,7 +22,7 @@ export default function CoreAssistPage() {
       </div>
 
       {/* Administrative Tasks */}
-      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A] text-white">
+      <div className="py-24 text-gray-700">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
             Exempel på VA-uppgifter

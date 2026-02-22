@@ -263,7 +263,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               <button
                 onClick={() => {
-                  router.replace("/foretag");
+                  router.push("/foretag");
                 }}
                 className="cursor-pointer flex items-center gap-3"
               >
@@ -272,7 +272,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  router.replace("/brf");
+                  router.push("/brf");
                 }}
                 className="cursor-pointer flex items-center gap-3"
               >
@@ -281,7 +281,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => {
-                  router.replace("/coreAssist");
+                  router.push("/coreAssist");
                 }}
                 className="cursor-pointer flex items-center gap-3"
               >
