@@ -392,51 +392,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/*services*/}
-      <div className="py-24 bg-white">
-        <div className=" px-4 sm:px-6 lg:px-8 lg:mx-10">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-
-              return (
-                <motion.div
-                  key={index}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
-                  initial={{ opacity: 0, y: 40, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.08,
-                    ease: "easeOut",
-                  }}
-                >
-                  <div
-                    className={`bg-gradient-to-br ${service.color} p-8 text-white min-h-[380px] flex flex-col`}
-                  >
-                    <Icon className="w-16 h-16 mb-4" />
-                    <h3 className="text-2xl sm:text-3xl mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-white/90">{service.description}</p>
-                  </div>
-                  <div className="p-8">
-                    <ul className="space-y-4">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#2EDB4A] flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
       {/*In depth*/}
       <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A]">
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-8 lg:mx-10">
@@ -563,10 +518,6 @@ export default function Home() {
               OM OSS
             </h2>
 
-            <h3 className="mt-6 text-2xl sm:text-3xl font-semibold text-gray-800">
-              Kloka Siffror
-            </h3>
-
             <p className="mt-8 text-lg sm:text-xl text-gray-700 leading-relaxed">
               Kloka Siffror arbetar med företag och bostadsrättsföreningar som
               vill ha
@@ -688,14 +639,6 @@ export default function Home() {
 
           {/*rollfördelning*/}
           <div className="max-w-3xl mx-auto px-6 pb-16 text-center">
-            <h3 className="text-33xl sm:text-5xl font-bold text-gray-900 tracking-tight">
-              Rollfördelning
-            </h3>
-
-            <h4 className="mt-4 text-xl font-semibold text-[#2A9036]">
-              Tydlig ansvarsfördelning
-            </h4>
-
             <div className="mt-8 space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
                 Kloka Siffror utför, strukturerar och följer upp det ekonomiska
