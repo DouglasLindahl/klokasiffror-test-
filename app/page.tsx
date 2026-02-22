@@ -19,6 +19,7 @@ import {
   Building2,
   Icon,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const packages = [
   {
@@ -227,6 +228,7 @@ const reasons = [
 ];
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <div
@@ -259,18 +261,33 @@ export default function Home() {
               arbeta operativt med ekonomin.
             </p>
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
-              <div className="flex items-center gap-3">
+              <button
+                onClick={() => {
+                  router.replace("/foretag");
+                }}
+                className="cursor-pointer flex items-center gap-3"
+              >
                 <Briefcase className="w-8 h-8" />
-                <span className="text-lg">gör till knappar - Företag</span>
-              </div>
-              <div className="flex items-center gap-3">
+                <span className="text-lg">Företag</span>
+              </button>
+              <button
+                onClick={() => {
+                  router.replace("/brf");
+                }}
+                className="cursor-pointer flex items-center gap-3"
+              >
                 <Calculator className="w-8 h-8" />
                 <span className="text-lg">BRF </span>
-              </div>
-              <div className="flex items-center gap-3">
+              </button>
+              <button
+                onClick={() => {
+                  router.replace("/coreAssist");
+                }}
+                className="cursor-pointer flex items-center gap-3"
+              >
                 <Headset className="w-8 h-8" />
                 <span className="text-lg">Core Assist</span>
-              </div>
+              </button>
             </div>
           </div>
         </div>
