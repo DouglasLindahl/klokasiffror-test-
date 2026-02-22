@@ -241,7 +241,7 @@ export default function Home() {
               <img
                 src="test2.png"
                 alt="Kloka Siffror"
-                className="h-24 sm:h-24 lg:h-58 w-auto opacity-95"
+                className="h-32 sm:h-38 lg:h-58 w-auto opacity-95"
               />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
