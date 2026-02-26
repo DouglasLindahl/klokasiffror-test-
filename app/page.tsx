@@ -410,9 +410,9 @@ export default function Home() {
       </div>
 
       {/*In depth*/}
-      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A]">
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-8 lg:mx-10">
-          <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 sm:p-12 shadow-xl hover:bg-white/20 transition-all duration-500">
+      <div className="py-24 bg-gradient-to-br from-[#043724] to-[#1F5F3A] ">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-8 lg:mx-10 ">
+          <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 sm:p-12 shadow-xl flex flex-col justify-between">
             {/* Header */}
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
@@ -444,7 +444,7 @@ export default function Home() {
             </div>
 
             {/* List */}
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl">
               <h3 className="text-xl font-semibold text-white mb-4 text-center">
                 Detta ingår vanligtvis
               </h3>
@@ -456,11 +456,21 @@ export default function Home() {
                 <li>Årsredovisning och deklaration</li>
               </ul>
             </div>
+            <div className="width-full flex justify-center pt-10">
+              <button
+                onClick={() => {
+                  router.push("/brf");
+                }}
+                className="cursor-pointer flex items-center gap-3 text-white border-2 border-solid border-white px-4 py-1 rounded-lg hover:bg-white hover:text-[#1F5F3A]"
+              >
+                <span className="text-lg">Learn More</span>
+              </button>
+            </div>
           </div>
 
           {/* CORE ASSIST */}
 
-          <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 sm:p-12 shadow-xl hover:bg-white/20 transition-all duration-500">
+          <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 sm:p-12 shadow-xl flex flex-col justify-between">
             {/* Header */}
             <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
@@ -521,6 +531,16 @@ export default function Home() {
                   <li>Grundläggande uppföljning</li>
                 </ul>
               </div>
+            </div>
+            <div className="width-full flex justify-center pt-10 ">
+              <button
+                onClick={() => {
+                  router.push("coreAssist");
+                }}
+                className="cursor-pointer flex items-center gap-3 text-white border-2 border-solid border-white px-4 py-1 rounded-lg hover:bg-white hover:text-[#1F5F3A]"
+              >
+                <span className="text-lg">Learn More</span>
+              </button>
             </div>
           </div>
         </div>
