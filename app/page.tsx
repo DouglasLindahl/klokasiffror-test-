@@ -20,11 +20,12 @@ import {
   Icon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { image } from "framer-motion/client";
 
 const packages = [
   {
     icon: Calculator,
-    title: "Paket AB1 - ORDNING",
+    title: "Paket 1 - ORDNING",
     description:
       "För dig som vill att ekonin ska fungera korrekt och utan krångel",
     features: [
@@ -32,11 +33,12 @@ const packages = [
       "0-2 anställda",
       "Företag som vill ha stabil grund",
     ],
+    image: "/klokasiffror_img_1.jpg",
     color: "from-[#2A9036] to-[#2EDB4A]",
   },
   {
     icon: Calculator,
-    title: "Paket AB2 - KONTROLL",
+    title: "Paket 2 - KONTROLL",
     description:
       "För dig som vill ha tydlig överblick utan att arbeta med ekonomi",
     features: [
@@ -44,11 +46,12 @@ const packages = [
       "1-10 anställda",
       "Ägare som vill förså läget löpande",
     ],
+    image: "/klokasiffror_img_2.jpg",
     color: "from-[#2A9036] to-[#2EDB4A]",
   },
   {
     icon: Calculator,
-    title: "Paket AB3 - ÄGARSTRUKTUR",
+    title: "Paket 3 - ÄGARSTRUKTUR",
     description:
       "För bolag med holding, flera bolag eller långsiktigt ägarperspektiv",
     features: [
@@ -57,96 +60,8 @@ const packages = [
       "Region- och franchisebolag",
       "Fastighetsägande bolag",
     ],
+    image: "/klokasiffror_img_5.jpg",
     color: "from-[#2A9036] to-[#2EDB4A]",
-  },
-];
-
-const services = [
-  {
-    icon: Calculator,
-    title: "Bokföring & Löner",
-    description:
-      "Vi tar hand om den löpande bokföringen, momsrapporteringen och lönehanteringen – digitalt, effektivt och korrekt.",
-    features: [
-      "Löpande bokföring",
-      "Moms- och arbetsgivardeklarationer",
-      "Lönehantering",
-      "Digital kvitto- och fakturahantering",
-    ],
-    color: "from-[#2A9036] to-[#2EDB4A]",
-  },
-  {
-    icon: Headset,
-    title: "Bokslut & Deklaration",
-    description:
-      "När året ska sammanställas hjälper vi till med bokslut, årsredovisning och inkomstdeklaration. Du får full kontroll och tydlighet – utan krångel. ",
-    features: [
-      "Bokslut och årsredovisning",
-      "Inkomstdeklarationer",
-      "Rådgivning inför nytt räkenskapsår ",
-    ],
-    color: "from-[#2A9036] to-[#2A9036]",
-  },
-  {
-    icon: Briefcase,
-    title: "Rapporter & Rådgivning ",
-    description:
-      "Vi gör siffrorna begripliga och användbara. Med rätt analys och rådgivning får du bättre beslutsunderlag – och mer lönsamhet. ",
-    features: [
-      "Ekonomisk analys",
-      "Likviditets- och resultatrapportering ",
-      "Tillväxt- och investeringsplanering",
-    ],
-    color: "from-[#2A9036] to-[#043724]",
-  },
-  {
-    icon: Users,
-    title: "Mentorship för entreprenörer",
-    description:
-      "Att starta och driva företag kan kännas överväldigande – särskilt i början. Därför erbjuder Kloka Siffror mentorskap för entreprenörer och småföretagare som vill ha stöd, bollplank och vägledning i sin företagsresa.",
-    features: [
-      "Affärsstrategi och planering",
-      "Prissättning, budget och ekonomistyrning",
-      "Effektiva rutiner för administration och bokföring",
-      "Råd om marknadsföring och kundrelationer",
-      "Löpande coachning och uppföljning",
-    ],
-    color: "from-[#2EDB4A] to-[#2EDB4A]",
-    extended: true,
-  },
-  {
-    icon: Headset,
-    title: "Virtuell Assistent (VA)",
-    description:
-      "Behöver du hjälp med administration, sociala medier eller kundkommunikation – men vill slippa anställa? Vår Virtuella Assistent är din flexibla resurs på distans.",
-    features: [
-      "Administration & back-office (avtal, fakturor, dokument)",
-      "E-post, kalender och kundkontakt",
-      "Sociala medier – planering, inlägg och publicering",
-      "Kundservice och enklare support",
-      "Webbuppdateringar och enklare e-handelsstöd",
-      "Bokföringsunderlag och kvittohantering",
-    ],
-    color: "from-[#2EDB4A] to-[#2A9036]",
-    process: [
-      "Vi kartlägger vad du behöver hjälp med",
-      "Du väljer mellan fast pris och löpande avtal",
-      "Vi startar snabbt – ofta inom några dagar",
-    ],
-  },
-  {
-    icon: Building2,
-    title: "Bostadsrättsföreningar (BRF)",
-    description:
-      "Ekonomisk förvaltning för små och medelstora föreningar – tryggt, enkelt och med fasta priser. Vi hjälper styrelser att få ordning, överblick och trygghet i den ekonomiska förvaltningen.",
-    features: [
-      "Löpande bokföring och avstämningar",
-      "Leverantörs- och fakturahantering",
-      "Budget",
-      "Årsbokslut och årsredovisning (K2/K3)",
-      "Rapporter och presentationer till styrelsen",
-    ],
-    color: "from-[#2A9036] to-[#043724]",
   },
 ];
 
@@ -168,22 +83,6 @@ const cities = [
     ],
   },
   {
-    name: "STOCKHOLM",
-    address: "Ekoxevägen 12",
-    person: "Ronja Winskog",
-    title: "Core Assist",
-    city: "116 20 Stockholm",
-    phone: "072-245 73 33",
-    email: "ronja@klokasiffror.se",
-    img: "ronja_img2.jpeg",
-    responsibilities: [
-      "Underlag",
-      "Administration",
-      "Dokumentation",
-      "Sociala medier",
-    ],
-  },
-  {
     name: "KUNGSHAMN",
     address: "Stenhuggaregatan 1B",
     person: "Scott Lindahl",
@@ -198,32 +97,6 @@ const cities = [
       "Ägar- och bolagslogik",
       "Kvalitetssäkring",
     ],
-  },
-];
-const reasons = [
-  {
-    icon: Award,
-    title: "Dokumenterad expertis",
-    description:
-      "Över 15 års erfarenhet av att hjälpa små och medelstora företag att växa med trygga och beprövade lösningar.",
-  },
-  {
-    icon: Users,
-    title: "Personligt & vänligt",
-    description:
-      "Du får en nära samarbetspartner som förstår din vardag, dina utmaningar och dina mål – inga opersonliga standardlösningar.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Flexibla tjänster & tydliga priser",
-    description:
-      "Anpassade upplägg med fasta priser så att du alltid vet vad du betalar för och vilken nytta du får.",
-  },
-  {
-    icon: MessageCircle,
-    title: "Digitalt smart – mänskligt nära",
-    description:
-      "Moderna digitala lösningar kombinerat med personlig kontakt och snabb återkoppling när du behöver det.",
   },
 ];
 
@@ -295,69 +168,119 @@ export default function Home() {
 
       {/*How we work 1*/}
 
-      <div className="text-center bg-gray-50 py-24 ">
-        <h2 className="text-4xl sm:text-5xl mb-4 text-gray-900">
-          Så arbetar vi
-        </h2>
+      {/* How we work */}
 
-        <h3 className="text-2xl sm:text-3xl mb-12 text-gray-900">
-          Nivå 1 - Kärnleverans
-        </h3>
-
-        <div className="px-4 sm:px-6 lg:px-8 lg:mx-10 flex flex-col md:flex-row items-center gap-12 px-6 text-left">
-          <div className="md:w-1/2 space-y-6">
-            <p className="text-xl text-gray-600">Alla kunder börjar här.</p>
-
-            <p className="text-xl text-gray-600">
-              Detta är grunden i vårt samarbete och består av:
-            </p>
-
-            <ul className="text-xl text-gray-600 list-disc list-inside space-y-2 ml-4">
-              <li>Fasta paket</li>
-              <li>Tydligt definierad leverans</li>
-              <li>Strukturerade arbetsflöden</li>
-              <li>Löpande uppföljning och rapportering</li>
-              <li>Flaggning när något kräver beslut</li>
-            </ul>
-
-            <p className="text-xl text-gray-600">
-              Vi tar hand om den löpande bokföringen, momsrapporteringen och
-              lönehanteringen – digitalt, effektivt och korrekt.
-            </p>
-          </div>
-          <div className="md:w-1/2 flex justify-end">
-            <img src="klokasiffror_img_1.jpg" alt="" className="rounded-4xl" />
-          </div>
+      <div className="py-24 bg-gray-50">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl text-gray-900">Så arbetar vi</h2>
         </div>
-      </div>
 
-      {/*How we work 2*/}
+        <div className="px-6 sm:px-8 lg:px-12 lg:mx-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Level 1 */}
 
-      <div className="text-center bg-gray-50 py-24">
-        <h3 className="text-2xl sm:text-3xl mb-12 text-gray-900">
-          Nivå 2 - Fördjupade instatser & konsultation
-        </h3>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <div className="bg-gradient-to-br from-[#2A9036] to-[#2EDB4A] p-8 text-white">
+              <Shield className="w-12 h-12 mb-4" />
 
-        <div className="px-4 sm:px-6 lg:px-8 lg:mx-10 flex flex-col md:flex-row items-center gap-12 px-6 text-left">
-          <div className="md:w-1/2 flex justify-end">
-            <img src="klokasiffror_img_2.jpg" alt="" className="rounded-4xl" />
+              <h3 className="text-2xl sm:text-3xl mb-3">
+                Nivå 1 – Kärnleverans
+              </h3>
+
+              <p className="text-white/90">Alla kunder börjar här.</p>
+            </div>
+
+            <div className="p-8 space-y-6">
+              <p className="text-gray-600 text-lg">
+                Detta är grunden i vårt samarbete och består av:
+              </p>
+
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">Fasta paket</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">
+                    Tydligt definierad leverans
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">
+                    Strukturerade arbetsflöden
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">Löpande uppföljning</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">
+                    Flaggning när beslut krävs
+                  </span>
+                </li>
+              </ul>
+
+              <p className="text-gray-600 text-lg">
+                Vi tar hand om bokföring, moms och löner – digitalt, effektivt
+                och korrekt.
+              </p>
+            </div>
           </div>
-          <div className="md:w-1/2 space-y-6">
-            <p className="text-xl text-gray-600">
-              Utöver våra paket erbjuder vi även:
-            </p>
 
-            <ul className="text-xl text-gray-600 list-disc list-inside space-y-2 ml-4">
-              <li>Extra genomgångar</li>
-              <li>Projektbaserade instatser</li>
-              <li>Fördjupade analyser</li>
-              <li>Konsultation kopplad till specifika frågor</li>
-            </ul>
+          {/* Level 2 */}
 
-            <p className="text-xl text-gray-600">
-              Våra paket utgör grunden i samarbetet. Eventuella fördjupade
-              insatser eller konsultationer sker alltid som ett separat tillägg.
-            </p>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <div className="bg-gradient-to-br from-[#2A9036] to-[#043724] p-8 text-white">
+              <TrendingUp className="w-12 h-12 mb-4" />
+
+              <h3 className="text-2xl sm:text-3xl mb-3">
+                Nivå 2 – Fördjupade insatser
+              </h3>
+
+              <p className="text-white/90">Extra stöd när det behövs.</p>
+            </div>
+
+            <div className="p-8 space-y-6">
+              <p className="text-gray-600 text-lg">
+                Utöver våra paket erbjuder vi även:
+              </p>
+
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">Extra genomgångar</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">
+                    Projektbaserade insatser
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">Fördjupade analyser</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
+                  <span className="text-gray-700">Konsultation</span>
+                </li>
+              </ul>
+
+              <p className="text-gray-600 text-lg">
+                Fördjupade insatser sker alltid som ett separat tillägg till
+                paketen.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -382,14 +305,29 @@ export default function Home() {
                     ease: "easeOut",
                   }}
                 >
-                  <div
-                    className={`bg-gradient-to-br ${service.color} p-8 text-white min-h-[300px] flex flex-col`}
-                  >
-                    <Icon className="w-16 h-16 mb-4" />
-                    <h3 className="text-2xl sm:text-3xl mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-white/90">{service.description}</p>
+                  <div className="relative min-h-[300px] flex flex-col justify-end">
+                    {/* Background Image */}
+
+                    <img
+                      src={service.image}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+
+                    {/* Green Overlay */}
+
+                    <div className="absolute inset-0 bg-[#2A9036]/80" />
+
+                    {/* Content */}
+
+                    <div className="relative p-8 text-white">
+                      <Icon className="w-16 h-16 mb-4" />
+
+                      <h3 className="text-2xl sm:text-3xl mb-3">
+                        {service.title}
+                      </h3>
+
+                      <p className="text-white/90">{service.description}</p>
+                    </div>
                   </div>
                   <div className="p-8">
                     <h4 className="text-lg  my-2">Passar: </h4>
@@ -463,7 +401,7 @@ export default function Home() {
                 }}
                 className="cursor-pointer flex items-center gap-3 text-white border-2 border-solid border-white px-4 py-1 rounded-lg hover:bg-white hover:text-[#1F5F3A]"
               >
-                <span className="text-lg">Läs mer</span>
+                <span className="text-lg">Läs er</span>
               </button>
             </div>
           </div>
@@ -539,7 +477,7 @@ export default function Home() {
                 }}
                 className="cursor-pointer flex items-center gap-3 text-white border-2 border-solid border-white px-4 py-1 rounded-lg hover:bg-white hover:text-[#1F5F3A]"
               >
-                <span className="text-lg">Läs mer</span>
+                <span className="text-lg">Läs er</span>
               </button>
             </div>
           </div>
@@ -578,10 +516,6 @@ export default function Home() {
                 <li>tydlig rollfördelning</li>
               </ul>
             </div>
-
-            <p className="mt-10 text-lg sm:text-xl text-gray-700 leading-relaxed">
-              Vi levererar struktur, uppföljning och genomförande.
-            </p>
           </div>
 
           {/* RIGHT SIDE — IMAGE */}
