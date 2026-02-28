@@ -54,12 +54,7 @@ const packages = [
     title: "Paket 3 - ÄGARSTRUKTUR",
     description:
       "För bolag med holding, flera bolag eller långsiktigt ägarperspektiv",
-    features: [
-      "Koncerner",
-      "Holdingbolag",
-      "Region- och franchisebolag",
-      "Fastighetsägande bolag",
-    ],
+    features: ["Koncerner", "Holdingbolag", "Region- och franchisebolag"],
     image: "/klokasiffror_img_5.jpg",
     color: "from-[#2A9036] to-[#2EDB4A]",
   },
@@ -310,8 +305,6 @@ export default function Home() {
                     {/* Content */}
 
                     <div className="relative p-8 text-white">
-                      <Icon className="w-16 h-16 mb-4" />
-
                       <h3 className="text-2xl sm:text-3xl mb-3">
                         {service.title}
                       </h3>
