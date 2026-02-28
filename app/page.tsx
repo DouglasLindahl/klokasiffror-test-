@@ -203,13 +203,6 @@ export default function Home() {
                   <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
                   <span className="text-gray-700">Löpande uppföljning</span>
                 </li>
-
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#2EDB4A]" />
-                  <span className="text-gray-700">
-                    Flaggning när beslut krävs
-                  </span>
-                </li>
               </ul>
 
               <p className="text-gray-600 text-lg">
