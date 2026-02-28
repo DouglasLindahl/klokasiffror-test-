@@ -463,7 +463,7 @@ export default function Home() {
                 }}
                 className="cursor-pointer flex items-center gap-3 text-white border-2 border-solid border-white px-4 py-1 rounded-lg hover:bg-white hover:text-[#1F5F3A]"
               >
-                <span className="text-lg">Learn More</span>
+                <span className="text-lg">Läs mer</span>
               </button>
             </div>
           </div>
@@ -539,7 +539,7 @@ export default function Home() {
                 }}
                 className="cursor-pointer flex items-center gap-3 text-white border-2 border-solid border-white px-4 py-1 rounded-lg hover:bg-white hover:text-[#1F5F3A]"
               >
-                <span className="text-lg">Learn More</span>
+                <span className="text-lg">Läs mer</span>
               </button>
             </div>
           </div>
