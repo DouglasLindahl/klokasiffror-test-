@@ -106,32 +106,26 @@ export default function Home() {
     <>
       <div
         className="bg-gradient-to-br 
-  from-[#2A9036] from-0% 
-  via-[#2A9036] via-30% 
-  to-[#2EDB4A] to-100% text-white"
+  from-[#007533] from-0% 
+  via-[#007533] via-30% 
+  to-[#2ECC71] to-100% text-white "
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-18 pb-28 ">
           <div className="text-center">
             <div className="flex justify-center mb-8 pb-8">
               <img
                 src="test2.png"
                 alt="Kloka Siffror"
-                className="h-32 sm:h-38 lg:h-58 w-auto opacity-95"
+                className="h-32 sm:h-38 lg:h-48 w-auto opacity-95"
               />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-6">
               Redovisning som gör skillnad.
             </h1>
-            <p className="text-xl sm:text-2xl mb-6 mt-12 text-white/90 max-w-3xl mx-auto font-bold">
-              Ekonomisk ordning, struktur och kontroll - för ägarledda bolag och
-              BRF
-            </p>
             <p className="text-xl sm:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
               Kloka Siffror är en redovisningsbyrå som arbetar med fasta paket
               och tydliga arbetssätt. Vi urför och strukturerar det ekonomiska
-              arbetet, följer upp och rapporterar - så att du som ägare eller
-              styrelse får överblick, beslutsunderlag och lugn utan att behöva
-              arbeta operativt med ekonomin.
+              arbetet, följer upp och rapporterar.
             </p>
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               <button
@@ -171,10 +165,6 @@ export default function Home() {
       {/* How we work */}
 
       <div className="py-24 bg-gray-50">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl text-gray-900">Så arbetar vi</h2>
-        </div>
-
         <div className="px-6 sm:px-8 lg:px-12 lg:mx-10 grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Level 1 */}
 
