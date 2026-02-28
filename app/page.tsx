@@ -164,7 +164,12 @@ export default function Home() {
           {/* Level 1 */}
 
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
-            <div className="bg-gradient-to-br from-[#2A9036] to-[#2EDB4A] p-8 text-white">
+            <div
+              className="bg-gradient-to-br 
+  from-[#007533] from-0% 
+  via-[#007533] via-30% 
+  to-[#2ECC71] to-100%  p-8 text-white"
+            >
               <Shield className="w-12 h-12 mb-4" />
 
               <h3 className="text-2xl sm:text-3xl mb-3">
