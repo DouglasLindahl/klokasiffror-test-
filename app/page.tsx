@@ -589,17 +589,17 @@ export default function Home() {
             <div className="mt-8 space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
                 Kloka Siffror utför, strukturerar och följer upp det ekonomiska
-                arbetet enligt avtal och gällande regelverk.
+                arbetet <br></br> enligt avtal och gällande regelverk.
               </p>
 
               <p>
                 Vi tillhandahåller rapporter, underlag och flaggar vid
-                avvikelser eller förändringar som kräver beslut.
+                avvikelser <br></br> eller förändringar som kräver beslut.
               </p>
 
               <p>
-                Beslut, godkännande och det yttersta ansvaret ligger alltid hos
-                kundens ägare, styrelse eller firmatecknare.
+                Beslut, godkännande och det yttersta ansvaret ligger alltid{" "}
+                <br></br> hos kundens ägare, styrelse eller firmatecknare.
               </p>
             </div>
           </div>
